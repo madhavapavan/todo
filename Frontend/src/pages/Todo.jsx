@@ -24,7 +24,7 @@ function Todo() {
 
   // Axios instance with auth header
   const api = axios.create({
-    baseURL: "http://localhost:5000/api",
+    baseURL: "https://todo-kx52.onrender.com/api",
     headers: {
       Authorization: `Bearer ${localStorage.getItem("token")}`,
     },

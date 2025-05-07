@@ -16,7 +16,7 @@ function Auth() {
       const payload = isLogin
         ? { email, password }
         : { username, email, password };
-      const res = await axios.post(`http://localhost:5000${endpoint}`, payload);
+      const res = await axios.post(`https://todo-kx52.onrender.com${endpoint}`, payload);
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("username", res.data.username || username);
       window.location.href = "/todos";
